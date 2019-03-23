@@ -1,0 +1,19 @@
+{ 
+  "npmClient": "npm",
+  "packages": [
+    "packages/**/*"
+  ],
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "allowBranch": "master",
+      "ignoreChanges": ["**/*.md","**/test*/**","**/fixtures/**"],
+      "message": "chore(release): publish"
+    },
+    "bootstrap": {
+      "ignore": "component-*",
+      "npmClientArgs": ["--no-package-lock"]
+    }
+  },
+  "version": "independent"
+}

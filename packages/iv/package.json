@@ -1,0 +1,13 @@
+{
+  "name": "@phr/iv",
+  "version": "1.0.0",
+  "main": "dist/initialization-vector.cjs.js",
+  "module": "dist/initialization-vector.esm.js",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "npm run lint",
+    "build": "rollup -c",
+    "lint": "standard --fix './{src,test}/**/*.js' --verbose | snazzy",
+    "commit": "npx git-cz"
+  }
+}
